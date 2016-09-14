@@ -13,12 +13,48 @@ public class MovePlayer : MonoBehaviour
 	public float jumpSpeed = 15f;
 	public int jumpCount = 0;
 	public int jumpCountMax = 1;
+	//Slide amount
+	public int slideDuration = 100;
+	//Slide time
+	public float slideTime = 0.1f;
+
+	//Coroutine for sliding the character using the 's' key
+	IEnumerator Slide()
+	{
+		//sets a temp variable equal to the value of the slideDuration
+		int durationTemp = slideDuration;
+		//Stores speed as a temporary variable
+		float speedTemp = speed;
+		//while iterations
+		//wait for seconds
+		//move the character controller
+		//While loop runs while the slideDuration is greater than 0
+		while(slideDuration > 0)
+		{
+			
+			//Decrement the slideDuration
+			slideDuration--;
+			//yield holds the coroutine 
+			//return "sends" to the coroutine to do an operation while yielding
+			//new creates an instance of an object
+			//WaitForSeconds is an object that waits for a duration of time
+			yield return new WaitForSeconds (slideTime);
+			//Double the speed
+			speed = speed += speed;
+			print ("Sliding");
+		}
+		//resets the slideDuration so the player can slide again
+		slideDuration = durationTemp;
+		//Resets speed
+		speed = speedTemp;
+	}
 
 	// Use this for initialization
 	void Start () 
 	{
 		//This 'finds' the character controller
 		myCC = GetComponent<CharacterController> ();
+//		StartCoroutine (Slide ());
 	}
 
 	void Update()
@@ -32,6 +68,18 @@ public class MovePlayer : MonoBehaviour
 			//Adding the jumpSpeed to the character
 			TempPos.y = jumpSpeed;
 		}
+		//start sliding to the right
+		if (Input.GetKey (KeyCode.RightArrow) && Input.GetKeyDown(KeyCode.S)) 
+		{
+			//Start the Slide coroutine
+			StartCoroutine (Slide ());
+		}
+		//Slide to the left
+		if (Input.GetKey (KeyCode.LeftArrow) && Input.GetKeyDown(KeyCode.S)) 
+		{
+			//Start the Slide coroutine
+			StartCoroutine (Slide ());
+		}
 		//Test if character is grounded, and reset jumpCount if it is
 		if (myCC.isGrounded) 
 		{
@@ -41,13 +89,11 @@ public class MovePlayer : MonoBehaviour
 		//Adding gravity to the y position of the tempPos
 		TempPos.y -= gravity;
 
-
 		//Move the character on the x-axis
 		TempPos.x = speed * Input.GetAxis("Horizontal");
 		//Move the character on the z-axis
 //		TempPos.z = speed * Input.GetAxis ("Vertical");
 		//Move it at a consistent speed(Time.deltaTime)
 		myCC.Move(TempPos * Time.deltaTime);
-
 	}
 }
