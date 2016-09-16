@@ -14,7 +14,7 @@ public class MovePlayer : MonoBehaviour
 	public int jumpCount = 0;
 	public int jumpCountMax = 1;
 	//Slide amount
-	public int slideDuration = 100;
+	public int slideDuration = 5;
 	//Slide time
 	public float slideTime = 0.1f;
 
