@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/PlayerMove.unity
+- path: Assets/RecycleLevel.unity
   isLoaded: 1
   isActive: 1
