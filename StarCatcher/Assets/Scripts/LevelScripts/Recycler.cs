@@ -21,7 +21,7 @@ public class Recycler : MonoBehaviour
 			recycleAction (this);
 		}
 	}
-
+	//When it is triggered by contact it will switch and be added to the queue
 	void OnTriggerEnter ()
 	{
 		canBeRecycled = true;

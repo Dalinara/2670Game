@@ -21,12 +21,14 @@ public class RecycleLevelComponent : MonoBehaviour
 
 	void OnTriggerEnter()
 	{
+		i = UnityEngine.Random.Range(0, recyclableList.Count - 1);
 		newLocation.x = StaticVars.nextSectionPos;
 		recyclableList[i].cube.position = newLocation;
 		StaticVars.nextSectionPos += StaticVars.distance;
-		if (i < recyclableList.Count - 1) 
+		if (recyclableList.Count > 0) 
 		{
-			i++;
+			recyclableList.RemoveAt(i);
 		}
+//		i = UnityEngine.Random.Range(0, recyclableList.Count - 1);
 	}
 }
