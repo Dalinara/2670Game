@@ -9,7 +9,7 @@ public class MovePlayer : MonoBehaviour
 	private CharacterController myCC;
 	//temp bar of data type vector3 to move the character
 	private Vector3 TempPos;
-	private float gravity = 3f;
+	public float gravity = 3f;
 	public float jumpSpeed = 15f;
 	public int jumpCount = 0;
 	public int jumpCountMax = 1;
