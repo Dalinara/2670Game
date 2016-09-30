@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/RecycleLevel02.unity
+- path: Assets/Scenes/RecycleLevel02.unity
   isLoaded: 1
   isActive: 1

@@ -29,6 +29,5 @@ public class RecycleLevelComponent : MonoBehaviour
 		{
 			recyclableList.RemoveAt(i);
 		}
-//		i = UnityEngine.Random.Range(0, recyclableList.Count - 1);
 	}
 }
