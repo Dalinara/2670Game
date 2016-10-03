@@ -10,7 +10,7 @@ public class MovePlayer : MonoBehaviour
 	//temp bar of data type vector3 to move the character
 	private Vector3 TempPos;
 	private float gravity = 3f;
-	public float jumpSpeed = 15f;
+	public float jumpSpeed = 30f;
 	public int jumpCount = 0;
 	public int jumpCountMax = 1;
 	//Slide amount
@@ -59,7 +59,6 @@ public class MovePlayer : MonoBehaviour
 
 	void Update()
 	{
-		//TempPos.y = gravity;
 		//Double jump
 		if(Input.GetKeyDown(KeyCode.Space) && jumpCount < jumpCountMax)
 		{
