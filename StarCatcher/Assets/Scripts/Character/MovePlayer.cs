@@ -18,6 +18,11 @@ public class MovePlayer : MonoBehaviour
 	//Slide time
 	public float slideTime = 0.1f;
 
+//	void StopScript()
+//	{
+//		
+//	}
+
 	//Coroutine for sliding the character using the 's' key
 	IEnumerator Slide()
 	{
