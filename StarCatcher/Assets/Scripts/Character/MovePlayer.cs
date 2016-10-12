@@ -18,11 +18,6 @@ public class MovePlayer : MonoBehaviour
 	//Slide time
 	public float slideTime = 0.1f;
 
-//	void StopScript()
-//	{
-//		
-//	}
-
 	//Coroutine for sliding the character using the 's' key
 	IEnumerator Slide()
 	{
@@ -53,13 +48,25 @@ public class MovePlayer : MonoBehaviour
 		//Resets speed
 		speed = speedTemp;
 	}
+	void StopScript()
+	{
+		
+	}
+
+	void StartGameHandler()
+	{
+		MoveUsingArrowKeys.MoveOnArrows += MoveCamera;
+		GameControl.startGame -= StartGameHandler;
+	}
 
 	// Use this for initialization
 	void Start () 
 	{
+		EndGame.gameOver += StopScript;
 		//This 'finds' the character controller
 		myCC = GetComponent<CharacterController> ();
 //		StartCoroutine (Slide ());
+		GameControl.startGame += StartGameHandler;
 	}
 
 	void Update()
