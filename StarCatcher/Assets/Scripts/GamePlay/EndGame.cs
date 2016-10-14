@@ -4,11 +4,11 @@ using System;
 
 public class EndGame : MonoBehaviour 
 {
-	public static Action gameOver;
+	public static Action GameOver;
 
 	void OnMouseDown()
 	{
-		gameOver();
+		GameOver();
 	}
 
 }

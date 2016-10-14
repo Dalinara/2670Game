@@ -55,18 +55,18 @@ public class MovePlayer : MonoBehaviour
 
 	void StartGameHandler()
 	{
-		MoveUsingArrowKeys.MoveOnArrows += MoveCamera;
-		GameControl.startGame -= StartGameHandler;
+//		MoveUsingArrowKeys.MoveOnArrows += MoveCamera;
+		GameControl.StartGame -= StartGameHandler;
 	}
 
 	// Use this for initialization
 	void Start () 
 	{
-		EndGame.gameOver += StopScript;
+		EndGame.GameOver += StopScript;
 		//This 'finds' the character controller
 		myCC = GetComponent<CharacterController> ();
 //		StartCoroutine (Slide ());
-		GameControl.startGame += StartGameHandler;
+		GameControl.StartGame += StartGameHandler;
 	}
 
 	void Update()

@@ -4,15 +4,15 @@ using System;
 
 public class GameControl : MonoBehaviour 
 {
-	public static Action startGame;
-	public static Action endGame;
+	public static Action StartGame;
+	public static Action EndGame;
 
 	public void StartGameCall ()
 	{
 		print ("Start Game");
-		if (startGame != null) 
+		if (StartGame != null) 
 		{
-			startGame ();
+			StartGame ();
 		}
 	}
 

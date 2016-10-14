@@ -45,7 +45,7 @@ public class FlipArt : MonoBehaviour
 
 	void Start()
 	{
-		EndGame.gameOver += StopScript;
+		EndGame.GameOver += StopScript;
 		UserInput.userInput += FlipCharacter;
 	}
 
