@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/CharacterRotate.unity
+- path: Assets/Scenes/Gravity.unity
   isLoaded: 1
   isActive: 1
