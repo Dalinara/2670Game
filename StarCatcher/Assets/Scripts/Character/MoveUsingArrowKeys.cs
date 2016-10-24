@@ -7,6 +7,7 @@ public class MoveUsingArrowKeys : MonoBehaviour
 	public Vector3 moveDirection;
 	int jumpSpeed = 10;
 	int gravity = 1;
+	int speed = 1;
 
 	// Use this for initialization
 	void Start () 
@@ -22,7 +23,7 @@ public class MoveUsingArrowKeys : MonoBehaviour
 
 	void Rotate(int _rotateInY)
 	{
-		Transform.Rotate (0, _rotateInY, 0);
+//		Transform.Rotate (0, _rotateInY, 0);
 	}
 
 	void Move(float _moveInZ)
@@ -38,7 +39,7 @@ public class MoveUsingArrowKeys : MonoBehaviour
 			moveDirection.y -= gravity * Time.deltaTime;			
 
 			moveDirection.x = _moveInZ;
-			moveDirection - transform.TransformDirection (moveDirection * speed * Time.deltaTime);
+//			moveDirection - transform.TransformDirection (moveDirection * speed * Time.deltaTime);
 			cc.Move (moveDirection);
 		}
 

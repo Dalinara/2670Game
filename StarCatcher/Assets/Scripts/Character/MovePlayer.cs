@@ -66,7 +66,7 @@ public class MovePlayer : MonoBehaviour
 		//This 'finds' the character controller
 		myCC = GetComponent<CharacterController> ();
 //		StartCoroutine (Slide ());
-		MoveUsingArrowKeys.MoveOnArrows += MoveCamera;
+//		MoveUsingArrowKeys.MoveOnArrows += MoveCamera;
 		GameControl.StartGame += StartGameHandler;
 	}
 
