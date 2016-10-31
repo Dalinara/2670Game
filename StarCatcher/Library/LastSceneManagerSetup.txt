@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/StarSpawn.unity
+- path: Assets/Scenes/NewStars.unity
   isLoaded: 1
   isActive: 1
