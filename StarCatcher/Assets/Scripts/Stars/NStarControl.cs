@@ -36,7 +36,7 @@ public class NStarControl : MonoBehaviour
 	{
 		while (canSpawn) 
 		{
-			yield return new WaitForSeconds (1);
+			yield return new WaitForSeconds (2);
 			stars [starNum].position = spawners [spawnerNum].position;
 			stars[starNum].GetComponent<MeshRenderer> ().enabled = true;
 			if (starNum < stars.Count - 1) 
