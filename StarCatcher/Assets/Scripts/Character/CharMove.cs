@@ -14,7 +14,7 @@ public class CharMove : MonoBehaviour
 	{
 		cc = GetComponent<CharacterController> ();
 		MoveUsingArrowKeys.MoveOnArrows += Move;
-		MoveUsingArrowKeys.RotateOnArrows += Rotate;
+//		MoveUsingArrowKeys.RotateOnArrows += Rotate;
 	}
 
 	void Rotate(int _rotateInY)
