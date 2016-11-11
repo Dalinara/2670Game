@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/AINav.unity
+- path: Assets/Scenes/JumpEnemy.unity
   isLoaded: 1
   isActive: 1

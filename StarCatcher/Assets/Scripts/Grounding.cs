@@ -8,7 +8,7 @@ public class Grounding : MonoBehaviour
 	private float gravity = -5;
 	private Vector3 tempP;
 	public Vector3 startPoint;
-	public float speed = 20;
+//	public float speed = 20;
 
 	// Use this for initialization
 	void Start () 
@@ -19,12 +19,16 @@ public class Grounding : MonoBehaviour
 
 	void OnTriggerEnter()
 	{
-		speed *= -1;
-//		if (cc.velocity.x < 40) 
+//		speed *= -1;
+		if (cc.velocity.x < 40) 
+		{
+			gravity *= 1.5f;
+		}
+//		else if(cc.velocity.x = 40)
 //		{
-//			gravity *= 1.5f;
+//			gravity *= .5f;
 //		}
-//		transform.position = startPoint;
+		transform.position = startPoint;
 	}
 	
 	// Update is called once per frame
@@ -35,7 +39,7 @@ public class Grounding : MonoBehaviour
 		cc.Move(tempP * Time.deltaTime);
 		if (cc.isGrounded) 
 		{
-			tempP.x = speed;
+			tempP.x = -gravity;
 		} else 
 		{
 			tempP.x = 0;
