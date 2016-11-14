@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/JumpEnemy.unity
+- path: Assets/Scenes/InterfacePractice.unity
   isLoaded: 1
   isActive: 1
