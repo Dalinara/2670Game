@@ -3,6 +3,11 @@ using System.Collections;
 
 public class AddPoints : MonoBehaviour, IAddPoints
 {
+	public int AddPnts ()
+	{
+		throw new System.NotImplementedException ();
+	}
+
 	public void OnTriggerEnter ()
 	{
 		throw new System.NotImplementedException ();

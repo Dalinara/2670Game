@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/InterfacePractice.unity
+- path: Assets/Scenes/Ships.unity
   isLoaded: 1
   isActive: 1

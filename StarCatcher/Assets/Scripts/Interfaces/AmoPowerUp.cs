@@ -21,6 +21,11 @@ public class AmoPowerUp : MonoBehaviour, IPowerUp, IAddPoints
 		}
 	}
 
+	public int AddPnts ()
+	{
+		throw new System.NotImplementedException ();
+	}
+
 	public int points 
 	{
 		get 
