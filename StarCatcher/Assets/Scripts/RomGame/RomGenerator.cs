@@ -5,7 +5,7 @@ public class RomGenerator : MonoBehaviour
 {
 	public int agentCount;
 	NavMesh navPen;
-	ArrayList RecycleList();
+//	ArrayList RecycleList();
 
 	void Start()
 	{
@@ -14,21 +14,16 @@ public class RomGenerator : MonoBehaviour
 
 	private void AddToList(NavMesh obj)
 	{
-		RecycleList.Add (obj);
-		obj.transform.position = navPen.position
+//		RecycleList.Add (obj);
+//		obj.transform.position = navPen.position
 	}
 
-	IEnumerator RecycleColors()
+/*	IEnumerator RecycleColors()
 	{
 		while (agentCount < 0) 
 		{
 
 		}
 	}
-
-
-	// Update is called once per frame
-	void Update () {
-	
-	}
+*/
 }
