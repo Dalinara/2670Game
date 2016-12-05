@@ -81,13 +81,13 @@ public class MovePlayer : MonoBehaviour
 			TempPos.y = jumpSpeed;
 		}
 		//start sliding to the right
-		if (Input.GetKey (KeyCode.RightArrow) && Input.GetKeyDown(KeyCode.S)) 
+		if (Input.GetKey (KeyCode.UpArrow) && Input.GetKeyDown(KeyCode.W)) 
 		{
 			//Start the Slide coroutine
 			StartCoroutine (Slide ());
 		}
 		//Slide to the left
-		if (Input.GetKey (KeyCode.LeftArrow) && Input.GetKeyDown(KeyCode.S)) 
+		if (Input.GetKey (KeyCode.DownArrow) && Input.GetKeyDown(KeyCode.S)) 
 		{
 			//Start the Slide coroutine
 			StartCoroutine (Slide ());
