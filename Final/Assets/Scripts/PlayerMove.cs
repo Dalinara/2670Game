@@ -12,8 +12,29 @@ public class PlayerMove : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		cc = GetComponent <CharacterController> ();
+
 	}
 
+	public void Forward()
+	{
+		moveDirection.x = speed * Time.deltaTime;
+		cc.Move(moveDirection);
+	}
+
+	public void MoveSide()
+	{
+		moveDirection.z = speed * Time.deltaTime;
+		cc.Move (moveDirection);
+	}
+
+//	public void RotateRight()
+//	{
+//		transform.Rotate(Vector3.right * Time.deltaTime);
+//	}
+
+//	public void RotateLeft()
+//	{
+//		transform.Rotate (Vector3.left * Time.deltaTime);
+//	}
 
 }
