@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class QuitButton : MonoBehaviour 
+public class QuitButton : UIBase 
 {
 	public GameObject mainMenu;
 
@@ -11,7 +11,7 @@ public class QuitButton : MonoBehaviour
 	
 	}
 
-	public void LoadMainMenu(int mainMenu)
+	public void LoadElement(int mainMenu)
 	{
 		Application.LoadLevel (mainMenu);
 	}

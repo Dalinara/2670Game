@@ -2,11 +2,11 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class MenuButton : MonoBehaviour 
+public class MenuButton : UIBase 
 {
 	public Image mainMenu;
 
-	void OnClickEnter()
+	void LoadElement()
 	{
 //		mainMenu;
 	}
