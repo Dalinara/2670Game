@@ -4,7 +4,7 @@ using System.Collections;
 public class UserInput : MonoBehaviour , IMove
 {
 	float rotateSpeed = 30;
-	float moveSpeed = 10;
+	public float moveSpeed = 10;
 	private CharacterController cc;
 	public Vector3 tempPos;
 

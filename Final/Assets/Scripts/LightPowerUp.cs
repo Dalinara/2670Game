@@ -11,7 +11,7 @@ public class LightPowerUp : MonoBehaviour , IPowerUp
 		torchLight.SetActive (false);
 	}
 
-	public void OnCollisionEnter ()
+	public void OnTriggerEnter ()
 	{
 		torchLight.SetActive (true);
 	}
