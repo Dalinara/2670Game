@@ -1,4 +1,4 @@
 ﻿public interface IPowerUp 
 {
-//	void OnTriggerEnter();
+	void OnTriggerEnter();
 }

@@ -1,15 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyMove : MonoBehaviour {
+public class EnemyMove : MonoBehaviour , IMove
+{
+	public float moveSpeed = 10;
+	private NavMeshAgent myAgent;
+	public Transform character;
+
+	Transform targetPlayer;
+//	float moveSpeed = 10;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start () 
+	{
+		myAgent = GetComponent<NavMeshAgent> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void OnCollisionEnter()
+	{
+		myAgent.destination = character.position;
 	}
+
 }

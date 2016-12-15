@@ -1,20 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class MenuButton : MonoBehaviour 
 {
-	public GameObject quitButton;
-	public GameObject resumeButton;
+	public Image mainMenu;
 
-	// Use this for initialization
-	void Start () 
-	{
-	
-	}
-	
 	void OnClickEnter()
 	{
-		quitButton.SetActive (true);
-		resumeButton.SetActive (true);
+//		mainMenu;
 	}
 }

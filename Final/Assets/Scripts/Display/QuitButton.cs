@@ -11,7 +11,7 @@ public class QuitButton : MonoBehaviour
 	
 	}
 
-	void LoadMainMenu(int mainMenu)
+	public void LoadMainMenu(int mainMenu)
 	{
 		Application.LoadLevel (mainMenu);
 	}
