@@ -2,12 +2,12 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class MenuButton : UIBase 
+public class MenuButton : MonoBehaviour 
 {
 	public Image mainMenu;
 
 	void LoadElement()
 	{
-//		mainMenu;
+//		mainMenu.isActiveAndEnabled;
 	}
 }

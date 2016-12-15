@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class QuitButton : UIBase 
+public class QuitButton : MonoBehaviour 
 {
 	public GameObject mainMenu;
 
