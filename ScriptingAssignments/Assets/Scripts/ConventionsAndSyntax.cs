@@ -13,7 +13,7 @@ public class ConventionsAndSyntax : MonoBehaviour
 	{
 		//Finds game object with the tag "player" and sets it as the player variable. 
 		player = GameObject.FindGameObjectWithTag ("Player"); 
-		offset = transform.position - player.transform.position; 
+//		offset = transform.position - player.transform.position; 
 	}
 	
 	// Update is called once per frame
